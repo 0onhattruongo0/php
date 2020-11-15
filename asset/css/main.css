@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+.total {
+  width: 100%;
+  height: auto;
+}
+/* nav */
+
+.hearder {
+  width: 100%;
+  height: 67px;
+  top: 0;
+  padding-top: 7px;
+
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.hearder_home {
+  width: 30%;
+}
+.hearder_button a {
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  color: rgb(61, 58, 58);
+  padding: 6px 10px;
+  line-height: 30px;
+  align-items: center;
+}
+.hearder_logo {
+  width: 40%;
+}
+.hearder_logo img {
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+}
+.hearder_right {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+}
+.hearder_cart {
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  margin-right: 20px;
+  border: 1px solid #cccccc;
+}
+.hearder_cart a {
+  text-decoration: none;
+  color: rgb(61, 58, 58);
+}
+.hearder_cart i {
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+}
+.slice {
+  width: 100%;
+  margin-top: 57px;
+}
+.slice img {
+  width: 100%;
+}
+
+.content {
+  width: 95%;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product {
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.product img {
+  width: 250px;
+  height: 250px;
+}
+.products_Name {
+  font-size: 20px;
+  margin: 10px auto;
+}
+.products_price {
+  font-size: 15px;
+  margin: 10px auto;
+}
+.product_overlay {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgba(204, 204, 204, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.product:hover .overlay {
+  height: 100%;
+}
+.overlay_link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay_link a {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #444;
+}
+.overlay-cart {
+  position: relative;
+  top: 60%;
+}
+.overlay-cart a {
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: #444;
+}
+/* chi tiết sản phẩm */
+.detail,
+.cart {
+  width: 80%;
+  margin: 100px auto;
+  border: 1px solid #ccc;
+}
+.detail h2 {
+  text-align: center;
+}
+.detail_content {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+}
+.detail_content_img {
+  width: 55%;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+.detail_content-com {
+  width: 45%;
+}
+.gallery {
+  margin-top: 30px;
+}
+.gallery ul {
+  padding-left: 0;
+}
+.gallery ul li {
+  width: 40%;
+  float: left;
+  list-style: none;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+.gallery ul li img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: auto;
+}
+.detail_content-com h1 {
+  text-align: center;
+}
+.content-com {
+  margin: 50px;
+  padding: 20px;
+  font-size: 20px;
+}
+.detail_cart {
+  margin-top: 30px;
+}
+.detail_cart input {
+  outline: none;
+  text-align: center;
+}
+.detail_cart-btn input {
+  color: #333;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+/* cart */
+.cart h1 {
+  margin-left: 50px;
+}
+.table_cart {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+.table_cart tr,
+.table_cart th,
+.table_cart td {
+  border: 1px solid #555555;
+  padding: 20px;
+}
+.quantity input {
+  width: 40px;
+  outline: none;
+  text-align: center;
+}
+.table_cart-img img {
+  width: 200px;
+  height: 200px;
+}
+.cart_update {
+  margin: 20px 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+.cart_cus {
+  width: 60%;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 40px;
+}
+.cart_cus h2 {
+  margin-top: 40px;
+}
+.cart_cus input {
+  outline: none;
+}
+.table_cart-delete a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.notify_msg {
+  padding-left: 30px;
+  color: rgb(223, 43, 43);
+  font-size: 20px;
+}
